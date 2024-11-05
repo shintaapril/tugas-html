@@ -1,11 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form HTML</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Form container */
+        form {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+
+        /* Headings */
+        h1, h2 {
+            color: #4169e1;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Labels */
+        label {
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Inputs and selects */
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Gender and language options */
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        /* Submit button */
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4169e1;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #27408b;
+        }
+    </style>
 </head>
 <body>
-  
+    <h1>Buat Account Baru</h1>
+    <h2>Sign Up Form</h2>
+
+    <form action="welcome.html" method="post">
+        <label for="first_name">First name:</label>
+        <input type="text" id="first_name" name="first_name"><br><br>
+
+        <label for="last_name">Last name:</label>
+        <input type="text" id="last_name" name="last_name"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <label for="nationality">Nationality:</label>
+        <select id="nationality" name="nationality">
+            <option value="Indonesia">Indonesia</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <label>Language Spoken:</label><br>
+        <input type="checkbox" id="bahasa" name="language" value="Bahasa Indonesia">
+        <label for="bahasa">Bahasa Indonesia</label><br>
+        <input type="checkbox" id="english" name="language" value="English">
+        <label for="english">English</label><br>
+        <input type="checkbox" id="other" name="language" value="Other">
+        <label for="other">Other</label><br><br>
+
+        <label for="bio">Bio:</label><br>
+        <textarea id="bio" name="bio" rows="5" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Sign Up">
+    </form>
 </body>
 </html>
