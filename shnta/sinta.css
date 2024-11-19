@@ -1,0 +1,52 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ffefba, #ffffff); /* Gradien warna latar belakang */
+    color: #333; /* Warna teks */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff6f61; /* Warna judul utama */
+    text-align: center; /* Pusatkan judul */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Efek bayangan pada teks */
+}
+
+h2 {
+    color: #ff6f61; /* Warna subjudul */
+    margin-top: 30px;
+    border-bottom: 2px solid #ff6f61; /* Garis bawah subjudul */
+    padding-bottom: 5px;
+}
+
+p {
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang paragraf dengan transparansi */
+    border-left: 5px solid #ff6f61; /* Garis sisi */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px; /* Sudut melengkung */
+    transition: transform 0.2s; /* Transisi saat hover */
+}
+
+p:hover {
+    transform: scale(1.02); /* Efek zoom saat hover */
+}
+
+img {
+    display: block;
+    margin: 20px auto; /* Pusatkan gambar */
+    border: 5px solid #7e61ff; /* Border gambar */
+    border-radius: 10px; /* Sudut melengkung gambar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan pada gambar */
+}
+
+audio, video {
+    display: block;
+    margin: 20px auto; /* Pusatkan elemen media */
+    border: 2px solid #838ff8; /* Border untuk audio dan video */
+    border-radius: 10px; /* Sudut melengkung */
+    background-color: #fff; /* Latar belakang putih */
+    padding: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan pada elemen media */
+}
