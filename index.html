@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #f8f9fa;
+        }
+
+        .card {
+            background-color: rgba(16, 104, 163, 0.7);
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .card h1,
+        .card h2,
+        .card h3,
+        .card p {
+            color: #f8f9fa;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .benefit-item i {
+            font-size: 1.5rem;
+            color: #41b8f0;
+        }
+
+        .join-btn {
+            background-color: #28a745;
+            color: #f8f9fa;
+            transition: all 0.3s ease;
+        }
+
+        .join-btn:hover {
+            background-color: #1e7e34;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+      
+        <div class="card shadow-lg p-5">
+            <div class="text-center mb-4">
+                <h1 class="display-4">Media Online</h1>
+                <h2>Sosial Media Developer</h2>
+                <p class="lead">Belajar dan berbagi agar hidup menjadi lebih baik</p>
+            </div>
+
+            <div class="mb-4">
+                <h3 class="mb-3">Benefit Join di Media Online</h3>
+                <div class="benefit-item">
+                    <i class="bi bi-lightbulb-fill"></i>
+                    <span>Mendapatkan motivasi dari sesama para Developer</span>
+                </div>
+                <div class="benefit-item">
+                    <i class="bi bi-people-fill"></i>
+                    <span>Sharing knowledge</span>
+                </div>
+                <div class="benefit-item">
+                    <i class="bi bi-award-fill"></i>
+                    <span>Dibuat oleh calon web developer terbaik</span>
+                </div>
+            </div>
+
+            <h3 class="mb-3">Cara Bergabung ke Media Online</h3>
+            <ol class="list-group list-group-numbered mb-4">
+                <li class="list-group-item bg-transparent text-white">Mengunjungi Website ini</li>
+                <li class="list-group-item bg-transparent text-white">
+                    Mendaftarkan di <a href="form.html" class="text-decoration-none text-warning">Form Sign Up</a>
+                </li>
+                <li class="list-group-item bg-transparent text-white">Selesai</li>
+            </ol>
+
+            <div class="text-center">
+                <a href="form.html" class="btn join-btn btn-lg">Gabung Sekarang</a>
+            </div>
+        </div>
+    </div>
+
+    </body>
+
+</html>
